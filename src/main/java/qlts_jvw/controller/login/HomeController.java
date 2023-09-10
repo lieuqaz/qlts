@@ -1,4 +1,4 @@
-package qlts_jvw.controller.web;
+package qlts_jvw.controller.login;
 
 import java.io.IOException;
 
@@ -9,22 +9,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns = { "/trang-chu"})
+@WebServlet(urlPatterns = { "/dang-nhap" })
 public class HomeController extends HttpServlet {
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 2L;
+	private static final long serialVersionUID = 3L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-	
-			RequestDispatcher rd = request.getRequestDispatcher("views/web/home.jsp");
-			rd.forward(request, response);
-		
-	
-		
+		RequestDispatcher rd = request.getRequestDispatcher("views/login.jsp");
+		rd.forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
