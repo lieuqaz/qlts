@@ -1,4 +1,4 @@
-package qlts_jvw.model;
+package com.qlts_jvw.model;
 
 public class FloorModel {
 	private final String id;

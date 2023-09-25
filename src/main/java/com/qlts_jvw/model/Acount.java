@@ -1,6 +1,6 @@
-package qlts_jvw.model;
+package com.qlts_jvw.model;
 
-public class Acount {
+public class Acount{
 
 	private String username;
 	private String password;
