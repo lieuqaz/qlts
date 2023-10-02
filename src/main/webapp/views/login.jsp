@@ -9,12 +9,13 @@
 </head>
 <body>
 	<div class="container">
-		<!-- <h1 class="form-heading">login Form</h1> -->
+		<h1 class="form-heading">Hệ thông quản lý tài sản</h1>
 		<div class="login-form">
 			<div class="main-div">
 				<c:if test="${not empty message}">
 					<div class="alert alert-${alert}">${message}</div>
 				</c:if>
+				<h1 class="form-title">Đăng nhập</h1>
 				<form action="<c:url value='/dang-nhap'/>" id="formLogin"
 					method="post">
 					<div class="form-group">
